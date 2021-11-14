@@ -19,13 +19,11 @@
 
     <body class="grey-background">
         <main>
-            <header class="py-3 border-bottom bg-white">
-                <div class="
-            container
+            <header class="border-bottom bg-white">
+                <div class="container
             d-flex
-            flex-wrap
-            align-items-center
-            justify-content-center
+            flex-wrap py-2 align-items-center
+            justify-content-between
           ">
                     <a href="/" class="
               d-flex
@@ -37,58 +35,58 @@
             ">
                         <img src="src/img/logo.png" alt="Freshersnow" />
                     </a>
-                    <form class="col-12 col-lg-auto mb-3 mb-lg-0">
+                    <form class="col-lg-auto mb-3 mb-lg-0">
                         <input type="search" class="form-control" placeholder="Search..." aria-label="Search" />
                     </form>
                 </div>
-            </header>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-2 mb-4">
-                <div class="container d-flex flex-wrap">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Dropdown
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link disabled">Disabled</a>
-                            </li>
-                        </ul>
-                        <ul class="nav">
-                            <li class="nav-item">
-                                <a href="#" class="nav-link link-light px-2">Login</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link link-light px-2">Sign up</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
 
-            <div class="container pe-0">
-                <div class="d-flex">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-2">
+                    <div class="container d-flex flex-wrap">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Link</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Dropdown
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled">Disabled</a>
+                                </li>
+                            </ul>
+                            <ul class="nav">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link link-light px-2">Login</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link link-light px-2">Sign up</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <div class="container mt-2">
+                <div class="d-flex main-container">
                     <div class="
               d-flex
               flex-column
@@ -453,13 +451,13 @@
                                 </div>
                                 <div class="card-body p-0">
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col-12 col-md-6">
                                             <ul class="list-group list-group-flush">
                                                 <li class="list-group-item">Degree: Bachelor of Commerce [B.Com]</li>
                                                 <li class="list-group-item">Duration: 3 year(s)</li>
                                             </ul>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-12 col-md-6">
                                             <ul class="list-group list-group-flush">
                                                 <li class="list-group-item">Total Courses: 21</li>
                                                 <li class="list-group-item">Course Fees: Rs. 12,495</li>
@@ -467,7 +465,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card-footer d-flex justify-content-center">
+                                <div class="card-footer d-flex justify-content-center align-items-start">
                                     <button class="btn btn-link"><i
                                             class="fas fa-briefcase"></i><br />Placements</button>
                                     <button class="btn btn-link"><i class="ps-3 fas fa-rupee pe-3"></i> <br />Fees &
@@ -504,13 +502,13 @@
                                 </div>
                                 <div class="card-body p-0">
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col-12 col-md-6">
                                             <ul class="list-group list-group-flush">
                                                 <li class="list-group-item">Degree: Bachelor of Commerce [B.Com]</li>
                                                 <li class="list-group-item">Duration: 3 year(s)</li>
                                             </ul>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-12 col-md-6">
                                             <ul class="list-group list-group-flush">
                                                 <li class="list-group-item">Total Courses: 21</li>
                                                 <li class="list-group-item">Course Fees: Rs. 12,495</li>
@@ -518,7 +516,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card-footer d-flex justify-content-center">
+                                <div class="card-footer d-flex justify-content-center align-items-start">
                                     <button class="btn btn-link"><i
                                             class="fas fa-briefcase"></i><br />Placements</button>
                                     <button class="btn btn-link"><i class="ps-3 fas fa-rupee pe-3"></i> <br />Fees &
@@ -553,13 +551,13 @@
                                 </div>
                                 <div class="card-body p-0">
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col-12 col-md-6">
                                             <ul class="list-group list-group-flush">
                                                 <li class="list-group-item">Degree: Bachelor of Commerce [B.Com]</li>
                                                 <li class="list-group-item">Duration: 3 year(s)</li>
                                             </ul>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-12 col-md-6">
                                             <ul class="list-group list-group-flush">
                                                 <li class="list-group-item">Total Courses: 21</li>
                                                 <li class="list-group-item">Course Fees: Rs. 12,495</li>
@@ -567,7 +565,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card-footer d-flex justify-content-center">
+                                <div class="card-footer d-flex justify-content-center align-items-start">
                                     <button class="btn btn-link"><i
                                             class="fas fa-briefcase"></i><br />Placements</button>
                                     <button class="btn btn-link"><i class="ps-3 fas fa-rupee pe-3"></i> <br />Fees &
@@ -602,13 +600,13 @@
                                 </div>
                                 <div class="card-body p-0">
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col-12 col-md-6">
                                             <ul class="list-group list-group-flush">
                                                 <li class="list-group-item">Degree: Bachelor of Commerce [B.Com]</li>
                                                 <li class="list-group-item">Duration: 3 year(s)</li>
                                             </ul>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-12 col-md-6">
                                             <ul class="list-group list-group-flush">
                                                 <li class="list-group-item">Total Courses: 21</li>
                                                 <li class="list-group-item">Course Fees: Rs. 12,495</li>
@@ -616,7 +614,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card-footer d-flex justify-content-center">
+                                <div class="card-footer d-flex justify-content-center align-items-start">
                                     <button class="btn btn-link"><i
                                             class="fas fa-briefcase"></i><br />Placements</button>
                                     <button class="btn btn-link"><i class="ps-3 fas fa-rupee pe-3"></i> <br />Fees &
@@ -651,13 +649,13 @@
                                 </div>
                                 <div class="card-body p-0">
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col-12 col-md-6">
                                             <ul class="list-group list-group-flush">
                                                 <li class="list-group-item">Degree: Bachelor of Commerce [B.Com]</li>
                                                 <li class="list-group-item">Duration: 3 year(s)</li>
                                             </ul>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-12 col-md-6">
                                             <ul class="list-group list-group-flush">
                                                 <li class="list-group-item">Total Courses: 21</li>
                                                 <li class="list-group-item">Course Fees: Rs. 12,495</li>
@@ -665,7 +663,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card-footer d-flex justify-content-center">
+                                <div class="card-footer d-flex justify-content-center align-items-start">
                                     <button class="btn btn-link"><i
                                             class="fas fa-briefcase"></i><br />Placements</button>
                                     <button class="btn btn-link"><i class="ps-3 fas fa-rupee pe-3"></i> <br />Fees &

@@ -10,6 +10,7 @@
   padding: 0 15px;
   width: calc(100% - 250px);
   min-height: calc(100vh - 183px);
+  padding-right: 0px;
 }
 
 .bg-dark{
@@ -84,4 +85,17 @@ background-color: #fff;
 .checks-height{
     overflow-y: auto;
     max-height: 150px;
+}
+
+@media screen and (max-width: 991px) {
+ .main-container, .main-content{
+display: block !important;
+padding: 0px;
+  }
+.search-sidebar{
+  display: none !important;
+}
+.main-content{
+  width: 100%; 
+}
 }
