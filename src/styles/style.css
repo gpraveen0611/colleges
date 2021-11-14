@@ -1,0 +1,81 @@
+.grey-background {
+  background: #f4f4f4;
+}
+
+.logo img {
+  width: 100px;
+}
+
+.main-content {
+  padding: 0 15px;
+  width: calc(100% - 250px);
+  min-height: calc(100vh - 183px);
+}
+
+.bg-dark{
+     background-color: #198754 !important;
+}
+
+.banner{
+    background-image: url("../img/freshersnow-background-image.jpg");
+    background-size: cover;
+    background-position: bottom;
+}
+/* buttons */
+
+.btn-info{
+    color: #fff;
+    background-color:  #4374b9;
+    border-color:  #4374b9;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #d1570d;
+  border-color: #d1570d;
+}
+.btn-primary:hover,
+.btn-check:active + .btn-primary,
+.btn-check:checked + .btn-primary,
+.btn-primary.active,
+.btn-primary:active,
+.show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #222;
+  border-color: #222;
+}
+
+/* colleges List */
+.colleges-list .college-logo{ width:75px; height:75px;}
+.college-item{
+background-color: #fff;
+}
+.college-item .card-footer .btn{
+    text-decoration: none;
+    color: #222;
+}
+.college-item .card-footer .btn i{
+    background-color: #d1570d; 
+    padding: 12px;
+    color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+}
+.college-item .card-footer .btn:hover{
+    color: #198754;
+}
+.college-item .card-footer .btn:hover i{
+     background-color: #198754;
+}
+
+.search-sidebar .card .card-header{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    background-color: #d1570d;
+}
+
+.checks-height{
+    overflow-y: auto;
+    max-height: 100px;
+}
