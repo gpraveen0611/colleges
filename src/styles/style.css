@@ -160,6 +160,19 @@ font-weight: bold;
   font-size: 24px;
 }
 
+.banner-caption.carousel-caption { 
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: #fff;
+    text-align: center;
+    background: rgba(0,0,0,0.5);
+    height: 100%;
+}
+
 @media screen and (max-width: 991px) {
  .main-container, .main-content{
 display: block !important;
