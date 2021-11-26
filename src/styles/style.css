@@ -315,6 +315,57 @@ font-weight: bold;
 .compare-colleges .featureslist{
   width: 350px;
 }
+
+.steps {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    position: relative;
+}
+.step-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: #d1570d;
+    transition: .4s;
+    color: #fff;
+    margin-bottom: 15px;
+}
+ 
+.done {
+    background-color: #d1570d;
+    color: #fff;
+}
+.step-item {
+    z-index: 10;
+    text-align: center;
+}
+#progress {
+  -webkit-appearance:none;
+    position: absolute;
+    width: 90%;
+    z-index: 5;
+    height: 10px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    background: #d1570d;
+}
+.step-title{
+  font-size: 14px;
+  font-weight: 600;
+
+}
+/* to customize progress bar */
+#progress::-webkit-progress-value {
+    background-color: #d1570d;
+    transition: .5s ease;
+}
+#progress::-webkit-progress-bar {
+    background-color: #fff
+
+}
 @media screen and (max-width: 991px) {
  .main-container, .main-content{
 display: block !important;
