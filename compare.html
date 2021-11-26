@@ -137,13 +137,6 @@
             <div class="container mt-2">
                 <div class="d-flex main-container">
                     <div class="flex-grow-1 main-content">
-                        <div
-                            class="d-flex justify-content-center align-content-stretch py-1 d-lg-none filter-button position-fixed">
-                            <button type="button" class="w-50 mx-2 btn btn-sm btn-lg btn-secondary"
-                                onclick="hideFilter()">Cancel</button>
-                            <button type="button" class="w-50 mx-2 btn btn-sm btn-primary btn-lg"
-                                onclick="showFilter()">Filter</button>
-                        </div>
                         <div class="card mb-2 ">
                             <div class="card-body banner">
                                 <h1 class="card-title">Compare Colleges</h1>
@@ -157,464 +150,489 @@
                         <div class="compare-colleges card">
                             <div class="card-header">Compare Colleges</div>
                             <div class="card-body">
-                                <table class="table table-bordered caption-top">
-                                    <tbody>
-                                        <tr>
-                                            <th scope="row">College</th>
-                                            <td>
-                                                <input type="text" class="form-control" />
-                                            </td>
-                                            <td><input type="text" class="form-control" /></td>
-                                            <td><input type="text" class="form-control" /></td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">Course Name</th>
-                                            <td><select name="sel_course" id="sel_course"
-                                                    class="form-control select_icon">
-                                                    <option value="-1" disabled="" selected>Select the course</option>
-                                                    <optgroup label="Business Management">
-                                                        <option data-short="bba"
-                                                            value="bachelor-of-business-administration-bba">Bachelor of
-                                                            Business Administration
-                                                            [BBA]</option>
-                                                        <option data-short="bbm"
-                                                            value="bachelor-of-business-management-bbm">Bachelor of
-                                                            Business Management [BBM]
+                                <div class="table-responsive-sm">
+                                    <table class="table table-hover table-bordered caption-top">
+                                        <tbody>
+                                            <tr>
+                                                <th style="width: 100px;" scope="row">College</th>
+                                                <td style="width: 200px;">
+                                                    <input type="text" class="form-control" />
+                                                </td>
+                                                <td style="width: 200px;"><input type="text" class="form-control" />
+                                                </td>
+                                                <td style="width: 200px;"><input type="text" class="form-control" />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Course Name</th>
+                                                <td><select name="sel_course" id="sel_course"
+                                                        class="form-control select_icon">
+                                                        <option value="-1" disabled="" selected>Select the course
                                                         </option>
-                                                        <option data-short="bms"
-                                                            value="bachelor-of-management-studies-bms">Bachelor of
-                                                            Management Studies [BMS]
+                                                        <optgroup label="Business Management">
+                                                            <option data-short="bba"
+                                                                value="bachelor-of-business-administration-bba">Bachelor
+                                                                of
+                                                                Business Administration
+                                                                [BBA]</option>
+                                                            <option data-short="bbm"
+                                                                value="bachelor-of-business-management-bbm">Bachelor of
+                                                                Business Management [BBM]
+                                                            </option>
+                                                            <option data-short="bms"
+                                                                value="bachelor-of-management-studies-bms">Bachelor of
+                                                                Management Studies [BMS]
+                                                            </option>
+
+                                                        </optgroup>
+                                                        <optgroup label="Engineering">
+                                                            <option data-short="btech"
+                                                                value="bachelor-of-technology-btech">
+                                                                B.Tech</option>
+                                                            <option data-short="mtech"
+                                                                value="master-of-technology-mtech">
+                                                                M.Tech</option>
+                                                            <option data-short="dual-btech-mba"
+                                                                value="bachelor-of-technology-btech-master-of-business-administration-mba">
+                                                                Bachelor of Technology [B.Tech] + Master of Business
+                                                                Administration [MBA]</option>
+                                                        </optgroup>
+                                                        <optgroup label="Architecture">
+                                                            <option data-short="barch"
+                                                                value="bachelor-of-architecture-barch">Bachelor of
+                                                                Architecture [B.Arch]</option>
+                                                            <option data-short="march"
+                                                                value="master-of-architecture-march">
+                                                                Master of Architecture [M.Arch]</option>
+                                                            <option data-short="mplan" value="master-of-planning-mplan">
+                                                                Master of Planning [M.Plan]</option>
+                                                        </optgroup>
+                                                    </select></td>
+                                                <td><select name="sel_course" id="sel_course"
+                                                        class="form-control select_icon">
+                                                        <option value="-1" disabled="" selected>Select the course
                                                         </option>
+                                                        <optgroup label="Business Management">
+                                                            <option data-short="bba"
+                                                                value="bachelor-of-business-administration-bba">Bachelor
+                                                                of
+                                                                Business Administration
+                                                                [BBA]</option>
+                                                            <option data-short="bbm"
+                                                                value="bachelor-of-business-management-bbm">Bachelor of
+                                                                Business Management [BBM]
+                                                            </option>
+                                                            <option data-short="bms"
+                                                                value="bachelor-of-management-studies-bms">Bachelor of
+                                                                Management Studies [BMS]
+                                                            </option>
 
-                                                    </optgroup>
-                                                    <optgroup label="Engineering">
-                                                        <option data-short="btech" value="bachelor-of-technology-btech">
-                                                            B.Tech</option>
-                                                        <option data-short="mtech" value="master-of-technology-mtech">
-                                                            M.Tech</option>
-                                                        <option data-short="dual-btech-mba"
-                                                            value="bachelor-of-technology-btech-master-of-business-administration-mba">
-                                                            Bachelor of Technology [B.Tech] + Master of Business
-                                                            Administration [MBA]</option>
-                                                    </optgroup>
-                                                    <optgroup label="Architecture">
-                                                        <option data-short="barch"
-                                                            value="bachelor-of-architecture-barch">Bachelor of
-                                                            Architecture [B.Arch]</option>
-                                                        <option data-short="march" value="master-of-architecture-march">
-                                                            Master of Architecture [M.Arch]</option>
-                                                        <option data-short="mplan" value="master-of-planning-mplan">
-                                                            Master of Planning [M.Plan]</option>
-                                                    </optgroup>
-                                                </select></td>
-                                            <td><select name="sel_course" id="sel_course"
-                                                    class="form-control select_icon">
-                                                    <option value="-1" disabled="" selected>Select the course</option>
-                                                    <optgroup label="Business Management">
-                                                        <option data-short="bba"
-                                                            value="bachelor-of-business-administration-bba">Bachelor of
-                                                            Business Administration
-                                                            [BBA]</option>
-                                                        <option data-short="bbm"
-                                                            value="bachelor-of-business-management-bbm">Bachelor of
-                                                            Business Management [BBM]
+                                                        </optgroup>
+                                                        <optgroup label="Engineering">
+                                                            <option data-short="btech"
+                                                                value="bachelor-of-technology-btech">
+                                                                B.Tech</option>
+                                                            <option data-short="mtech"
+                                                                value="master-of-technology-mtech">
+                                                                M.Tech</option>
+                                                            <option data-short="dual-btech-mba"
+                                                                value="bachelor-of-technology-btech-master-of-business-administration-mba">
+                                                                Bachelor of Technology [B.Tech] + Master of Business
+                                                                Administration [MBA]</option>
+                                                        </optgroup>
+                                                        <optgroup label="Architecture">
+                                                            <option data-short="barch"
+                                                                value="bachelor-of-architecture-barch">Bachelor of
+                                                                Architecture [B.Arch]</option>
+                                                            <option data-short="march"
+                                                                value="master-of-architecture-march">
+                                                                Master of Architecture [M.Arch]</option>
+                                                            <option data-short="mplan" value="master-of-planning-mplan">
+                                                                Master of Planning [M.Plan]</option>
+                                                        </optgroup>
+                                                    </select></td>
+                                                <td>
+                                                    <select name="sel_course" id="sel_course"
+                                                        class="form-control select_icon">
+                                                        <option value="-1" disabled="" selected>Select the course
                                                         </option>
-                                                        <option data-short="bms"
-                                                            value="bachelor-of-management-studies-bms">Bachelor of
-                                                            Management Studies [BMS]
-                                                        </option>
+                                                        <optgroup label="Business Management">
+                                                            <option data-short="bba"
+                                                                value="bachelor-of-business-administration-bba">Bachelor
+                                                                of
+                                                                Business Administration
+                                                                [BBA]</option>
+                                                            <option data-short="bbm"
+                                                                value="bachelor-of-business-management-bbm">Bachelor of
+                                                                Business Management [BBM]
+                                                            </option>
+                                                            <option data-short="bms"
+                                                                value="bachelor-of-management-studies-bms">Bachelor of
+                                                                Management Studies [BMS]
+                                                            </option>
 
-                                                    </optgroup>
-                                                    <optgroup label="Engineering">
-                                                        <option data-short="btech" value="bachelor-of-technology-btech">
-                                                            B.Tech</option>
-                                                        <option data-short="mtech" value="master-of-technology-mtech">
-                                                            M.Tech</option>
-                                                        <option data-short="dual-btech-mba"
-                                                            value="bachelor-of-technology-btech-master-of-business-administration-mba">
-                                                            Bachelor of Technology [B.Tech] + Master of Business
-                                                            Administration [MBA]</option>
-                                                    </optgroup>
-                                                    <optgroup label="Architecture">
-                                                        <option data-short="barch"
-                                                            value="bachelor-of-architecture-barch">Bachelor of
-                                                            Architecture [B.Arch]</option>
-                                                        <option data-short="march" value="master-of-architecture-march">
-                                                            Master of Architecture [M.Arch]</option>
-                                                        <option data-short="mplan" value="master-of-planning-mplan">
-                                                            Master of Planning [M.Plan]</option>
-                                                    </optgroup>
-                                                </select></td>
-                                            <td>
-                                                <select name="sel_course" id="sel_course"
-                                                    class="form-control select_icon">
-                                                    <option value="-1" disabled="" selected>Select the course</option>
-                                                    <optgroup label="Business Management">
-                                                        <option data-short="bba"
-                                                            value="bachelor-of-business-administration-bba">Bachelor of
-                                                            Business Administration
-                                                            [BBA]</option>
-                                                        <option data-short="bbm"
-                                                            value="bachelor-of-business-management-bbm">Bachelor of
-                                                            Business Management [BBM]
-                                                        </option>
-                                                        <option data-short="bms"
-                                                            value="bachelor-of-management-studies-bms">Bachelor of
-                                                            Management Studies [BMS]
-                                                        </option>
+                                                        </optgroup>
+                                                        <optgroup label="Engineering">
+                                                            <option data-short="btech"
+                                                                value="bachelor-of-technology-btech">
+                                                                B.Tech</option>
+                                                            <option data-short="mtech"
+                                                                value="master-of-technology-mtech">
+                                                                M.Tech</option>
+                                                            <option data-short="dual-btech-mba"
+                                                                value="bachelor-of-technology-btech-master-of-business-administration-mba">
+                                                                Bachelor of Technology [B.Tech] + Master of Business
+                                                                Administration [MBA]</option>
+                                                        </optgroup>
+                                                        <optgroup label="Architecture">
+                                                            <option data-short="barch"
+                                                                value="bachelor-of-architecture-barch">Bachelor of
+                                                                Architecture [B.Arch]</option>
+                                                            <option data-short="march"
+                                                                value="master-of-architecture-march">
+                                                                Master of Architecture [M.Arch]</option>
+                                                            <option data-short="mplan" value="master-of-planning-mplan">
+                                                                Master of Planning [M.Plan]</option>
+                                                        </optgroup>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Courses</th>
+                                                <td>
+                                                    <table class="table table-bordered">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Course</th>
+                                                                <th>Total Fees</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Bachelor of Commerce [B.Com]</td>
+                                                                <td style="font-weight: bold;">Rs. 27,825</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Bachelor of Commerce [B.Com] {Hons.}</td>
+                                                                <td style="font-weight: bold;">Rs. 27,825</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Bachelor of Science [B.Sc]</td>
+                                                                <td style="font-weight: bold;">Rs. 31,481</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Master of Science [M.Sc]</td>
+                                                                <td style="font-weight: bold;">Rs. 19,222</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Bachelor of Arts [BA]</td>
+                                                                <td style="font-weight: bold;">Rs. 28,350</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Bachelor of Arts [BA] {Hons.}</td>
+                                                                <td style="font-weight: bold;">Rs. 28,238</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Master of Arts [MA]</td>
+                                                                <td style="font-weight: bold;">Rs. 17,922</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Bachelor of Elementary Education [B.El.Ed]</td>
+                                                                <td style="font-weight: bold;">Rs. 51,660</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                                <td>
+                                                    <table class="table table-bordered">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Course</th>
+                                                                <th>Total Fees</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Bachelor of Commerce [B.Com]</td>
+                                                                <td style="font-weight: bold;">Rs. 27,825</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Bachelor of Commerce [B.Com] {Hons.}</td>
+                                                                <td style="font-weight: bold;">Rs. 27,825</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Bachelor of Science [B.Sc]</td>
+                                                                <td style="font-weight: bold;">Rs. 31,481</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Master of Science [M.Sc]</td>
+                                                                <td style="font-weight: bold;">Rs. 19,222</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Bachelor of Arts [BA]</td>
+                                                                <td style="font-weight: bold;">Rs. 28,350</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Bachelor of Arts [BA] {Hons.}</td>
+                                                                <td style="font-weight: bold;">Rs. 28,238</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Master of Arts [MA]</td>
+                                                                <td style="font-weight: bold;">Rs. 17,922</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Bachelor of Elementary Education [B.El.Ed]</td>
+                                                                <td style="font-weight: bold;">Rs. 51,660</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                                <td>
+                                                    <table class="table table-bordered">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Course</th>
+                                                                <th>Total Fees</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Bachelor of Commerce [B.Com]</td>
+                                                                <td style="font-weight: bold;">Rs. 27,825</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Bachelor of Commerce [B.Com] {Hons.}</td>
+                                                                <td style="font-weight: bold;">Rs. 27,825</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Bachelor of Science [B.Sc]</td>
+                                                                <td style="font-weight: bold;">Rs. 31,481</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Master of Science [M.Sc]</td>
+                                                                <td style="font-weight: bold;">Rs. 19,222</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Bachelor of Arts [BA]</td>
+                                                                <td style="font-weight: bold;">Rs. 28,350</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Bachelor of Arts [BA] {Hons.}</td>
+                                                                <td style="font-weight: bold;">Rs. 28,238</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Master of Arts [MA]</td>
+                                                                <td style="font-weight: bold;">Rs. 17,922</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Bachelor of Elementary Education [B.El.Ed]</td>
+                                                                <td style="font-weight: bold;">Rs. 51,660</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Course Duration</th>
+                                                <td>36 months</td>
+                                                <td>24 months</td>
+                                                <td>48 months</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Location</th>
+                                                <td>Delhi, India</td>
+                                                <td>Hyderabad, India</td>
+                                                <td>Bangalore, India</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Approval</th>
+                                                <td>AICTE</td>
+                                                <td>JNTU</td>
+                                                <td>IIIT</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">University</th>
+                                                <td>University of Delhi - [DU], New Delhi</td>
+                                                <td>University of JNTU - [DU], New Delhi</td>
+                                                <td>University of Delhi - [DU], New Delhi</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Institution Type</th>
+                                                <td>Public</td>
+                                                <td>Private</td>
+                                                <td>Public</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Rank</th>
+                                                <td>34</td>
+                                                <td>95</td>
+                                                <td>33</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Student Ratings</th>
+                                                <td>Based on 144 student's data</td>
+                                                <td>Based on 11 student's data</td>
+                                                <td>Based on 178 student's data</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Detailed Ratings</th>
+                                                <td>
+                                                    Academics : 7.9
 
-                                                    </optgroup>
-                                                    <optgroup label="Engineering">
-                                                        <option data-short="btech" value="bachelor-of-technology-btech">
-                                                            B.Tech</option>
-                                                        <option data-short="mtech" value="master-of-technology-mtech">
-                                                            M.Tech</option>
-                                                        <option data-short="dual-btech-mba"
-                                                            value="bachelor-of-technology-btech-master-of-business-administration-mba">
-                                                            Bachelor of Technology [B.Tech] + Master of Business
-                                                            Administration [MBA]</option>
-                                                    </optgroup>
-                                                    <optgroup label="Architecture">
-                                                        <option data-short="barch"
-                                                            value="bachelor-of-architecture-barch">Bachelor of
-                                                            Architecture [B.Arch]</option>
-                                                        <option data-short="march" value="master-of-architecture-march">
-                                                            Master of Architecture [M.Arch]</option>
-                                                        <option data-short="mplan" value="master-of-planning-mplan">
-                                                            Master of Planning [M.Plan]</option>
-                                                    </optgroup>
-                                                </select>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">Courses</th>
-                                            <td>
-                                                <table class="table table-bordered">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>Course</th>
-                                                            <th>Total Fees</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>Bachelor of Commerce [B.Com]</td>
-                                                            <td style="font-weight: bold;">Rs. 27,825</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Bachelor of Commerce [B.Com] {Hons.}</td>
-                                                            <td style="font-weight: bold;">Rs. 27,825</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Bachelor of Science [B.Sc]</td>
-                                                            <td style="font-weight: bold;">Rs. 31,481</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Master of Science [M.Sc]</td>
-                                                            <td style="font-weight: bold;">Rs. 19,222</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Bachelor of Arts [BA]</td>
-                                                            <td style="font-weight: bold;">Rs. 28,350</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Bachelor of Arts [BA] {Hons.}</td>
-                                                            <td style="font-weight: bold;">Rs. 28,238</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Master of Arts [MA]</td>
-                                                            <td style="font-weight: bold;">Rs. 17,922</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Bachelor of Elementary Education [B.El.Ed]</td>
-                                                            <td style="font-weight: bold;">Rs. 51,660</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </td>
-                                            <td>
-                                                <table class="table table-bordered">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>Course</th>
-                                                            <th>Total Fees</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>Bachelor of Commerce [B.Com]</td>
-                                                            <td style="font-weight: bold;">Rs. 27,825</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Bachelor of Commerce [B.Com] {Hons.}</td>
-                                                            <td style="font-weight: bold;">Rs. 27,825</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Bachelor of Science [B.Sc]</td>
-                                                            <td style="font-weight: bold;">Rs. 31,481</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Master of Science [M.Sc]</td>
-                                                            <td style="font-weight: bold;">Rs. 19,222</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Bachelor of Arts [BA]</td>
-                                                            <td style="font-weight: bold;">Rs. 28,350</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Bachelor of Arts [BA] {Hons.}</td>
-                                                            <td style="font-weight: bold;">Rs. 28,238</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Master of Arts [MA]</td>
-                                                            <td style="font-weight: bold;">Rs. 17,922</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Bachelor of Elementary Education [B.El.Ed]</td>
-                                                            <td style="font-weight: bold;">Rs. 51,660</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </td>
-                                            <td>
-                                                <table class="table table-bordered">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>Course</th>
-                                                            <th>Total Fees</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>Bachelor of Commerce [B.Com]</td>
-                                                            <td style="font-weight: bold;">Rs. 27,825</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Bachelor of Commerce [B.Com] {Hons.}</td>
-                                                            <td style="font-weight: bold;">Rs. 27,825</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Bachelor of Science [B.Sc]</td>
-                                                            <td style="font-weight: bold;">Rs. 31,481</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Master of Science [M.Sc]</td>
-                                                            <td style="font-weight: bold;">Rs. 19,222</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Bachelor of Arts [BA]</td>
-                                                            <td style="font-weight: bold;">Rs. 28,350</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Bachelor of Arts [BA] {Hons.}</td>
-                                                            <td style="font-weight: bold;">Rs. 28,238</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Master of Arts [MA]</td>
-                                                            <td style="font-weight: bold;">Rs. 17,922</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Bachelor of Elementary Education [B.El.Ed]</td>
-                                                            <td style="font-weight: bold;">Rs. 51,660</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">Course Duration</th>
-                                            <td>36 months</td>
-                                            <td>24 months</td>
-                                            <td>48 months</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">Location</th>
-                                            <td>Delhi, India</td>
-                                            <td>Hyderabad, India</td>
-                                            <td>Bangalore, India</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">Approval</th>
-                                            <td>AICTE</td>
-                                            <td>JNTU</td>
-                                            <td>IIIT</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">University</th>
-                                            <td>University of Delhi - [DU], New Delhi</td>
-                                            <td>University of JNTU - [DU], New Delhi</td>
-                                            <td>University of Delhi - [DU], New Delhi</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">Institution Type</th>
-                                            <td>Public</td>
-                                            <td>Private</td>
-                                            <td>Public</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">Rank</th>
-                                            <td>34</td>
-                                            <td>95</td>
-                                            <td>33</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">Student Ratings</th>
-                                            <td>Based on 144 student's data</td>
-                                            <td>Based on 11 student's data</td>
-                                            <td>Based on 178 student's data</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">Detailed Ratings</th>
-                                            <td>
-                                                Academics : 7.9
+                                                    Fees : 7.2
 
-                                                Fees : 7.2
+                                                    Placements : 6.9
 
-                                                Placements : 6.9
+                                                    Infrastructure : 7.6
 
-                                                Infrastructure : 7.6
+                                                    Social Life : 8.1</td>
+                                                <td>
+                                                    Academics : 7.9
 
-                                                Social Life : 8.1</td>
-                                            <td>
-                                                Academics : 7.9
+                                                    Fees : 7.2
 
-                                                Fees : 7.2
+                                                    Placements : 6.9
 
-                                                Placements : 6.9
+                                                    Infrastructure : 7.6
 
-                                                Infrastructure : 7.6
+                                                    Social Life : 8.1</td>
+                                                <td>
+                                                    Academics : 7.9
 
-                                                Social Life : 8.1</td>
-                                            <td>
-                                                Academics : 7.9
+                                                    Fees : 7.2
 
-                                                Fees : 7.2
+                                                    Placements : 6.9
 
-                                                Placements : 6.9
+                                                    Infrastructure : 7.6
 
-                                                Infrastructure : 7.6
-
-                                                Social Life : 8.1</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">Facilities</th>
-                                            <td>
-                                                <div
-                                                    class="featureslist d-flex flex-wrap justify-content-center align-items-start">
-                                                    <button class="btn btn-link"><i
-                                                            class="fas fa-volleyball-ball"></i><br>Placements</button>
-                                                    <button class="btn btn-link"><i class="fas fa-laptop"></i> <br>Fees
-                                                        &amp;
-                                                        Courses</button>
-                                                    <button class="btn btn-link"><i
-                                                            class="fas fa-hand-holding-medical"></i>
-                                                        <br>Admission</button>
-                                                    <button class="btn btn-link"><i class="fas fa-coffee"></i>
-                                                        <br>Reviews</button>
-                                                    <button class="btn btn-link"><i class="fas fa-vials"></i>
-                                                        <br>Laboratory</button>
-                                                    <button class="btn btn-link"><i class="fas fa-book"></i>
-                                                        <br>Library</button>
-                                                    <button class="btn btn-link"><i class="fas fa-hotel"></i>
-                                                        <br>Hostel</button>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div
-                                                    class="featureslist d-flex flex-wrap justify-content-center align-items-start">
-                                                    <button class="btn btn-link"><i
-                                                            class="fas fa-volleyball-ball"></i><br>Placements</button>
-                                                    <button class="btn btn-link"><i class="fas fa-laptop"></i> <br>Fees
-                                                        &amp;
-                                                        Courses</button>
-                                                    <button class="btn btn-link"><i
-                                                            class="fas fa-hand-holding-medical"></i>
-                                                        <br>Admission</button>
-                                                    <button class="btn btn-link"><i class="fas fa-coffee"></i>
-                                                        <br>Reviews</button>
-                                                    <button class="btn btn-link"><i class="fas fa-vials"></i>
-                                                        <br>Laboratory</button>
-                                                    <button class="btn btn-link"><i class="fas fa-book"></i>
-                                                        <br>Library</button>
-                                                    <button class="btn btn-link"><i class="fas fa-hotel"></i>
-                                                        <br>Hostel</button>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div
-                                                    class="featureslist d-flex flex-wrap justify-content-center align-items-start">
-                                                    <button class="btn btn-link"><i
-                                                            class="fas fa-volleyball-ball"></i><br>Placements</button>
-                                                    <button class="btn btn-link"><i class="fas fa-laptop"></i> <br>Fees
-                                                        &amp;
-                                                        Courses</button>
-                                                    <button class="btn btn-link"><i
-                                                            class="fas fa-hand-holding-medical"></i>
-                                                        <br>Admission</button>
-                                                    <button class="btn btn-link"><i class="fas fa-coffee"></i>
-                                                        <br>Reviews</button>
-                                                    <button class="btn btn-link"><i class="fas fa-vials"></i>
-                                                        <br>Laboratory</button>
-                                                    <button class="btn btn-link"><i class="fas fa-book"></i>
-                                                        <br>Library</button>
-                                                    <button class="btn btn-link"><i class="fas fa-hotel"></i>
-                                                        <br>Hostel</button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">Best Review</th>
-                                            <td>
-                                                <p><strong>Niharika</strong></p>
-                                                <p>BA PROGRAMME</p>
-                                                <p class="card-text mb-1">
-                                                    <span> <i class="fas fa-star text-orange"></i> </span>
-                                                    <span> <i class="fas fa-star text-orange"></i> </span>
-                                                    <span> <i class="fas fa-star text-orange"></i> </span>
-                                                    <span> <i class="fas fa-star-half text-orange"></i> </span>
-                                                    <span> <i class="fas fa-star text-grey"></i> </span>
-                                                </p>
-                                                <p>hello there, beautiful people. I've graduated from Gargi in the field
-                                                    of Arts. Like half of the world, my friends used
-                                                    to wonder, why'd I opt for a simple BA(Programme) Degree, inspite of
-                                                    scoring a 90...
-                                                </p>
-                                            </td>
-                                            <td>
-                                                <p><strong>Niharika</strong></p>
-                                                <p>BA PROGRAMME</p>
-                                                <p class="card-text mb-1">
-                                                    <span> <i class="fas fa-star text-orange"></i> </span>
-                                                    <span> <i class="fas fa-star text-orange"></i> </span>
-                                                    <span> <i class="fas fa-star text-orange"></i> </span>
-                                                    <span> <i class="fas fa-star-half text-orange"></i> </span>
-                                                    <span> <i class="fas fa-star text-grey"></i> </span>
-                                                </p>
-                                                <p>hello there, beautiful people. I've graduated from Gargi in the field
-                                                    of Arts. Like half of the world, my friends used
-                                                    to wonder, why'd I opt for a simple BA(Programme) Degree, inspite of
-                                                    scoring a 90...
-                                                </p>
-                                            </td>
-                                            <td>
-                                                <p><strong>Niharika</strong></p>
-                                                <p>BA PROGRAMME</p>
-                                                <p class="card-text mb-1">
-                                                    <span> <i class="fas fa-star text-orange"></i> </span>
-                                                    <span> <i class="fas fa-star text-orange"></i> </span>
-                                                    <span> <i class="fas fa-star text-orange"></i> </span>
-                                                    <span> <i class="fas fa-star-half text-orange"></i> </span>
-                                                    <span> <i class="fas fa-star text-grey"></i> </span>
-                                                </p>
-                                                <p>hello there, beautiful people. I've graduated from Gargi in the field
-                                                    of Arts. Like half of the world, my friends used
-                                                    to wonder, why'd I opt for a simple BA(Programme) Degree, inspite of
-                                                    scoring a 90...
-                                                </p>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                                    Social Life : 8.1</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Facilities</th>
+                                                <td>
+                                                    <div class="featureslist">
+                                                        <button class="btn btn-link"><i
+                                                                class="fas fa-volleyball-ball"></i><br>Placements</button>
+                                                        <button class="btn btn-link"><i class="fas fa-laptop"></i>
+                                                            <br>Fees
+                                                            &amp;
+                                                            Courses</button>
+                                                        <button class="btn btn-link"><i
+                                                                class="fas fa-hand-holding-medical"></i>
+                                                            <br>Admission</button>
+                                                        <button class="btn btn-link"><i class="fas fa-coffee"></i>
+                                                            <br>Reviews</button>
+                                                        <button class="btn btn-link"><i class="fas fa-vials"></i>
+                                                            <br>Laboratory</button>
+                                                        <button class="btn btn-link"><i class="fas fa-book"></i>
+                                                            <br>Library</button>
+                                                        <button class="btn btn-link"><i class="fas fa-hotel"></i>
+                                                            <br>Hostel</button>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="featureslist">
+                                                        <button class="btn btn-link"><i
+                                                                class="fas fa-volleyball-ball"></i><br>Placements</button>
+                                                        <button class="btn btn-link"><i class="fas fa-laptop"></i>
+                                                            <br>Fees
+                                                            &amp;
+                                                            Courses</button>
+                                                        <button class="btn btn-link"><i
+                                                                class="fas fa-hand-holding-medical"></i>
+                                                            <br>Admission</button>
+                                                        <button class="btn btn-link"><i class="fas fa-coffee"></i>
+                                                            <br>Reviews</button>
+                                                        <button class="btn btn-link"><i class="fas fa-vials"></i>
+                                                            <br>Laboratory</button>
+                                                        <button class="btn btn-link"><i class="fas fa-book"></i>
+                                                            <br>Library</button>
+                                                        <button class="btn btn-link"><i class="fas fa-hotel"></i>
+                                                            <br>Hostel</button>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="featureslist">
+                                                        <button class="btn btn-link"><i
+                                                                class="fas fa-volleyball-ball"></i><br>Placements</button>
+                                                        <button class="btn btn-link"><i class="fas fa-laptop"></i>
+                                                            <br>Fees
+                                                            &amp;
+                                                            Courses</button>
+                                                        <button class="btn btn-link"><i
+                                                                class="fas fa-hand-holding-medical"></i>
+                                                            <br>Admission</button>
+                                                        <button class="btn btn-link"><i class="fas fa-coffee"></i>
+                                                            <br>Reviews</button>
+                                                        <button class="btn btn-link"><i class="fas fa-vials"></i>
+                                                            <br>Laboratory</button>
+                                                        <button class="btn btn-link"><i class="fas fa-book"></i>
+                                                            <br>Library</button>
+                                                        <button class="btn btn-link"><i class="fas fa-hotel"></i>
+                                                            <br>Hostel</button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Best Review</th>
+                                                <td>
+                                                    <p><strong>Niharika</strong></p>
+                                                    <p>BA PROGRAMME</p>
+                                                    <p class="card-text mb-1">
+                                                        <span> <i class="fas fa-star text-orange"></i> </span>
+                                                        <span> <i class="fas fa-star text-orange"></i> </span>
+                                                        <span> <i class="fas fa-star text-orange"></i> </span>
+                                                        <span> <i class="fas fa-star-half text-orange"></i> </span>
+                                                        <span> <i class="fas fa-star text-grey"></i> </span>
+                                                    </p>
+                                                    <p>hello there, beautiful people. I've graduated from Gargi in the
+                                                        field
+                                                        of Arts. Like half of the world, my friends used
+                                                        to wonder, why'd I opt for a simple BA(Programme) Degree,
+                                                        inspite of
+                                                        scoring a 90...
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    <p><strong>Niharika</strong></p>
+                                                    <p>BA PROGRAMME</p>
+                                                    <p class="card-text mb-1">
+                                                        <span> <i class="fas fa-star text-orange"></i> </span>
+                                                        <span> <i class="fas fa-star text-orange"></i> </span>
+                                                        <span> <i class="fas fa-star text-orange"></i> </span>
+                                                        <span> <i class="fas fa-star-half text-orange"></i> </span>
+                                                        <span> <i class="fas fa-star text-grey"></i> </span>
+                                                    </p>
+                                                    <p>hello there, beautiful people. I've graduated from Gargi in the
+                                                        field
+                                                        of Arts. Like half of the world, my friends used
+                                                        to wonder, why'd I opt for a simple BA(Programme) Degree,
+                                                        inspite of
+                                                        scoring a 90...
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    <p><strong>Niharika</strong></p>
+                                                    <p>BA PROGRAMME</p>
+                                                    <p class="card-text mb-1">
+                                                        <span> <i class="fas fa-star text-orange"></i> </span>
+                                                        <span> <i class="fas fa-star text-orange"></i> </span>
+                                                        <span> <i class="fas fa-star text-orange"></i> </span>
+                                                        <span> <i class="fas fa-star-half text-orange"></i> </span>
+                                                        <span> <i class="fas fa-star text-grey"></i> </span>
+                                                    </p>
+                                                    <p>hello there, beautiful people. I've graduated from Gargi in the
+                                                        field
+                                                        of Arts. Like half of the world, my friends used
+                                                        to wonder, why'd I opt for a simple BA(Programme) Degree,
+                                                        inspite of
+                                                        scoring a 90...
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>

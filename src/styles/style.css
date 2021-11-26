@@ -312,7 +312,9 @@ font-weight: bold;
 .custom-cards h3{
   background-color: rgba(0,0,0,0.5);
 }
-
+.compare-colleges .featureslist{
+  width: 350px;
+}
 @media screen and (max-width: 991px) {
  .main-container, .main-content{
 display: block !important;
