@@ -312,6 +312,7 @@ font-weight: bold;
 .custom-cards h3{
   background-color: rgba(0,0,0,0.5);
 }
+
 @media screen and (max-width: 991px) {
  .main-container, .main-content{
 display: block !important;
@@ -345,5 +346,24 @@ display: block !important;
 }
 .featureslist .btn{
   width: 33%;
+}
+footer .col-2{
+width: 33.33%;
+}
+footer .col-4{
+width: 100%;
+margin-left: 0px;
+margin: 20px 0px;
+}
+}
+
+@media screen and (max-width: 600px) {
+footer .col-2{
+width: 50%;
+margin-left: 0px;
+}
+ footer .col-4{
+width: 100%;
+margin: 20px 0px;
 }
 }
